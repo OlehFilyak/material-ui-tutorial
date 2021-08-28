@@ -1,17 +1,15 @@
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import Notes from './pages/Notes';
-import Create from './pages/Create';
-import { createTheme, ThemeProvider } from '@material-ui/core';
-import { purple } from '@material-ui/core/colors';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+import Notes from './pages/Notes'
+import Create from './pages/Create'
+import { createMuiTheme, ThemeProvider } from '@material-ui/core'
+import { purple } from '@material-ui/core/colors'
 
-console.log(purple);
-
-const theme = createTheme({
+const theme = createMuiTheme({
   palette: {
     primary: {
-      main: '#fefefe',
+      main: '#fefefe'
     },
-    secondary: purple,
+    secondary: purple
   },
   typography: {
     fontFamily: 'Quicksand',
@@ -19,8 +17,8 @@ const theme = createTheme({
     fontWeightRegular: 500,
     fontWeightMedium: 600,
     fontWeightBold: 700,
-  },
-});
+  }
+})
 
 function App() {
   return (
